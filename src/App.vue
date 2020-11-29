@@ -1,17 +1,19 @@
+// наши страницы лежат в папке вьюс. через тег роутер вью мы будем отображать наши страницы
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Vue App Rout</h1>
+    <hr>
+    <navigbar />
+    <hr>
+    <router-view />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import navigbar from '@/components/navbar.vue'
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    navigbar
   }
 }
 </script>
